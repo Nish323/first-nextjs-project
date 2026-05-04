@@ -1,7 +1,7 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div>hello world</div>
+    <button className="py-2 px-4 bg-blue-500 text-white">
+      ボタン
+    </button>
   );
 }
