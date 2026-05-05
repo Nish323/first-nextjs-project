@@ -121,7 +121,6 @@ export default function Home() {
         <div className="h-16 bg-gray-200 p-4">高さ64px</div>
         <div className="h-full bg-gray-300 p-4 mt-4">高さ100%</div>
       </div>
-      
     </>
   );
 }
