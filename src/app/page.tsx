@@ -66,6 +66,62 @@ export default function Home() {
           <p className="text-sm">説明文がここに入ります</p>
         </div>
       </div>
+
+      {/* Flexboxレイアウト */}
+      <div className="py-5">
+        <div className="flex gap-4">
+          <div className="bg-gray-200 p-4">1</div>
+          <div className="bg-gray-300 p-4">2</div>
+          <div className="bg-gray-400 p-4">3</div>
+        </div>
+        <div className="flex flex-col gap-4 mt-4">
+          <div className="bg-gray-200 p-4">1</div>
+          <div className="bg-gray-300 p-4">2</div>
+          <div className="bg-gray-400 p-4">3</div>
+        </div>
+        <div className="flex justify-between gap-4 mt-4">
+          <div className="bg-gray-200 p-4">1</div>
+          <div className="bg-gray-300 p-4">2</div>
+          <div className="bg-gray-400 p-4">3</div>
+        </div>
+        <div className="flex justify-center gap-4 mt-4">
+          <div className="bg-gray-200 p-4">1</div>
+          <div className="bg-gray-300 p-4">2</div>
+          <div className="bg-gray-400 p-4">3</div>
+        </div>
+        <div className="flex items-center gap-4 mt-4">
+          <div className="bg-gray-200 p-4">1</div>
+          <div className="bg-gray-300 p-4">2</div>
+          <div className="bg-gray-400 p-4">3</div>
+        </div>
+      </div>
+
+      {/* グリッドレイアウト */}
+      <div className="py-5">
+        <div className="grid grid-cols-3 gap-4">
+          <div className="bg-gray-200 p-4">1</div>
+          <div className="bg-gray-300 p-4">2</div>
+          <div className="bg-gray-400 p-4">3</div>
+        </div>
+        <div className="grid grid-cols-2 gap-4 mt-4">
+          <div className="bg-gray-200 p-4">1</div>
+          <div className="bg-gray-300 p-4">2</div>
+          <div className="bg-gray-400 p-4">3</div>
+        </div>
+      </div>
+
+      {/* 幅の指定 */}
+      <div className="py-5">
+        <div className="w-64 bg-gray-200 p-4">幅256px</div>
+        <div className="w-full bg-gray-300 p-4 mt-4">幅100%</div>
+      </div>
+      
+      {/* 高さの指定 */}
+      <div className="py-5">
+        <div className="h-16 bg-gray-200 p-4">高さ64px</div>
+        <div className="h-full bg-gray-300 p-4 mt-4">高さ100%</div>
+      </div>
+      
     </>
   );
 }
