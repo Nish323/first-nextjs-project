@@ -1,4 +1,5 @@
 import { db } from '@/lib/db';
+import LikeButton from '@/app/components/LikeButton';
 
 async function getBlogPost(slug: string) {
   const post = await db.post.findUnique({
@@ -37,6 +38,9 @@ export default async function Page({
         ) : (
           <>投稿日：未定</>
         )}
+      </div>
+      <div className="mt-4">
+        <LikeButton postSlug={slug} />
       </div>
     </article>
   );
